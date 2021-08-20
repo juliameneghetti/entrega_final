@@ -391,7 +391,7 @@ footer{
 
 /*RESPONSIVE*/
 
-@media screen and (min-width: 400px){
+@media screen and (min-width: 400px) and (max-width: 767px){
 
     /*SECCIÓN SOBRE MI*/
 
@@ -430,7 +430,8 @@ footer{
         }
     }
 
-    .carousel-caption {
+    .carousel-caption{
+
         position: static;
 
         padding-top: 5px;
@@ -439,11 +440,12 @@ footer{
     /*SECCIÓN TIENDA*/
 
     .seccion__tienda--imagenes{
+
         margin-bottom: 35px;
     }
 }
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 768px) and (max-width: 991px){
 
     /*SECCIÓN SOBRE MI*/
 
@@ -484,7 +486,8 @@ footer{
         }
     }
 
-    .carousel-caption {
+    .carousel-caption{
+
         position: static;
 
         padding-top: 5px;
@@ -493,11 +496,12 @@ footer{
     /*SECCIÓN TIENDA*/
 
     .seccion__tienda--imagenes{
+
         margin-bottom: 35px;
     }
 }
 
-@media screen and (min-width: 992px) and (max-width: 1199px){
+ @media screen and (min-width: 992px) and (max-width: 1199px){
 
     /*SECCIÓN SOBRE MI*/
 
@@ -506,7 +510,7 @@ footer{
         justify-content: center;      
     
         img{
-            @include tamaño (600px, auto);
+             @include tamaño (600px, auto);
         }
     
         .seccion__sobreMi--container{
@@ -538,7 +542,8 @@ footer{
         }
     }
 
-    .carousel-caption {
+    .carousel-caption{
+
         position: static;
 
         padding-top: 5px;
@@ -547,6 +552,7 @@ footer{
     /*SECCIÓN TIENDA*/
 
     .seccion__tienda--imagenes{
+        
         margin-bottom: 35px;
     }
 }
