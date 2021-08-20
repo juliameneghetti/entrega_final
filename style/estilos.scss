@@ -195,25 +195,38 @@ h1{
 
 .carousel-item{
     img{
-
         @include tamaño (auto, 900px);
 
         margin: 0 auto;
     }
 
-    h5{
-        color: $colorSecundario;
-    }
+    .carousel-caption{
+        position: static;
 
-    button{
-        margin-top: 20px;
-        padding: 10px 40px;
+        h5{
+            color: $colorSecundario;
 
-        color: $colorSecundario;
-     
-        &:hover{
-            background-color: $opacidadSecundario;
-            border-radius: 10px; 
+            font-size: 25px;
+        }
+    
+        button{
+            margin-top: 30px;
+            padding: 10px 40px;
+    
+            color: $colorSecundario;
+
+            font-size: 25px;
+         
+            &:hover{
+                background-color: $opacidadSecundario;
+                border-radius: 10px; 
+            }
+        }
+        
+        img{
+            @include tamaño (auto, 40px);
+
+            margin-top: 30px;
         }
     }
 }
@@ -396,7 +409,6 @@ footer{
     /*SECCIÓN SOBRE MI*/
 
     .seccion__sobreMi--flex{
-      
         justify-content: center;      
     
         img{
@@ -420,27 +432,32 @@ footer{
     /*SECCIÓN NEW IN*/
 
     .carousel-item{ 
-
         img{
             @include tamaño (400px, auto);
         }
 
-        h5{
-            font-size: 15px;
+        .carousel-caption{
+            h5{
+                font-size: 15px;
+            }
+    
+            button{
+                font-size: 15px;
+
+                margin-top: 20px;
+            }
+        
+            img{
+                @include tamaño (auto, 30px);
+
+                margin-top: 20px;
+            }
         }
-    }
-
-    .carousel-caption{
-
-        position: static;
-
-        padding-top: 5px;
     }
 
     /*SECCIÓN TIENDA*/
 
     .seccion__tienda--imagenes{
-
         margin-bottom: 35px;
     }
 }
@@ -450,7 +467,6 @@ footer{
     /*SECCIÓN SOBRE MI*/
 
     .seccion__sobreMi--flex{
-      
         justify-content: center;      
     
         img{
@@ -476,27 +492,32 @@ footer{
     /*SECCIÓN NEW IN*/
 
     .carousel-item{ 
-
         img{
             @include tamaño (450px, auto);
         }
 
-        h5{
-            font-size: 15px;
+        .carousel-caption{
+            h5{
+                font-size: 20px;
+            }
+    
+            button{
+                font-size: 20px;
+
+                margin-top: 20px;
+            }
+        
+            img{
+                @include tamaño (auto, 30px);
+
+                margin-top: 20px;
+            }
         }
-    }
-
-    .carousel-caption{
-
-        position: static;
-
-        padding-top: 5px;
     }
 
     /*SECCIÓN TIENDA*/
 
     .seccion__tienda--imagenes{
-
         margin-bottom: 35px;
     }
 }
@@ -506,7 +527,6 @@ footer{
     /*SECCIÓN SOBRE MI*/
 
     .seccion__sobreMi--flex{
-      
         justify-content: center;      
     
         img{
@@ -532,27 +552,32 @@ footer{
     /*SECCIÓN NEW IN*/
 
     .carousel-item{ 
-
         img{
             @include tamaño (600px, auto);
         }
 
-        h5{
-            font-size: 15px;
+        .carousel-caption{
+            h5{
+                font-size: 20px;
+            }
+    
+            button{
+                font-size: 20px;
+
+                margin-top: 20px;
+            }
+        
+            img{
+                @include tamaño (auto, 30px);
+
+                margin-top: 20px;
+            }
         }
-    }
-
-    .carousel-caption{
-
-        position: static;
-
-        padding-top: 5px;
     }
 
     /*SECCIÓN TIENDA*/
 
     .seccion__tienda--imagenes{
-        
         margin-bottom: 35px;
     }
 }

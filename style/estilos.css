@@ -12106,19 +12106,31 @@ h1, .h1 {
   margin: 0 auto;
 }
 
-.carousel-item h5, .carousel-item .h5 {
-  color: white;
+.carousel-item .carousel-caption {
+  position: static;
 }
 
-.carousel-item button {
-  margin-top: 20px;
+.carousel-item .carousel-caption h5, .carousel-item .carousel-caption .h5 {
+  color: white;
+  font-size: 25px;
+}
+
+.carousel-item .carousel-caption button {
+  margin-top: 30px;
   padding: 10px 40px;
   color: white;
+  font-size: 25px;
 }
 
-.carousel-item button:hover {
+.carousel-item .carousel-caption button:hover {
   background-color: rgba(234, 155, 187, 0.6);
   border-radius: 10px;
+}
+
+.carousel-item .carousel-caption img {
+  width: auto;
+  height: 40px;
+  margin-top: 30px;
 }
 
 /*SECCIÓN TIENDA*/
@@ -12327,12 +12339,17 @@ footer .footer__boton--contacto {
     width: 400px;
     height: auto;
   }
-  .carousel-item h5, .carousel-item .h5 {
+  .carousel-item .carousel-caption h5, .carousel-item .carousel-caption .h5 {
     font-size: 15px;
   }
-  .carousel-caption {
-    position: static;
-    padding-top: 5px;
+  .carousel-item .carousel-caption button {
+    font-size: 15px;
+    margin-top: 20px;
+  }
+  .carousel-item .carousel-caption img {
+    width: auto;
+    height: 30px;
+    margin-top: 20px;
   }
   /*SECCIÓN TIENDA*/
   .seccion__tienda--imagenes {
@@ -12369,12 +12386,17 @@ footer .footer__boton--contacto {
     width: 450px;
     height: auto;
   }
-  .carousel-item h5, .carousel-item .h5 {
-    font-size: 15px;
+  .carousel-item .carousel-caption h5, .carousel-item .carousel-caption .h5 {
+    font-size: 20px;
   }
-  .carousel-caption {
-    position: static;
-    padding-top: 5px;
+  .carousel-item .carousel-caption button {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+  .carousel-item .carousel-caption img {
+    width: auto;
+    height: 30px;
+    margin-top: 20px;
   }
   /*SECCIÓN TIENDA*/
   .seccion__tienda--imagenes {
@@ -12411,12 +12433,17 @@ footer .footer__boton--contacto {
     width: 600px;
     height: auto;
   }
-  .carousel-item h5, .carousel-item .h5 {
-    font-size: 15px;
+  .carousel-item .carousel-caption h5, .carousel-item .carousel-caption .h5 {
+    font-size: 20px;
   }
-  .carousel-caption {
-    position: static;
-    padding-top: 5px;
+  .carousel-item .carousel-caption button {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+  .carousel-item .carousel-caption img {
+    width: auto;
+    height: 30px;
+    margin-top: 20px;
   }
   /*SECCIÓN TIENDA*/
   .seccion__tienda--imagenes {
