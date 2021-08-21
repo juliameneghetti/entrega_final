@@ -524,6 +524,44 @@ footer{
 
  @media screen and (min-width: 992px) and (max-width: 1199px){
 
+    /*NAV*/
+
+    .header__logo--tamaño{    
+        padding-left: 5px;
+    }
+    
+    .navbar-collapse {
+        justify-content: center;
+        
+        img{
+            height: 20px;
+        
+            margin: 5px;
+        }
+    }
+    
+    .nav-link{
+        margin: 10px;
+
+        font-size: 13px;
+    }
+
+    // .header__logo--tamaño{
+    //     @include tamaño (auto, 100px);
+    // }
+
+    // .nav-link{
+    //     font-size: 12px;
+    // }
+
+    // .navbar-collapse{        
+    //     img{
+    //         height: 20px;
+        
+    //         margin: 10px;
+    //     }
+    // }
+
     /*SECCIÓN SOBRE MI*/
 
     .seccion__sobreMi--flex{
