@@ -11989,6 +11989,7 @@ fieldset:disabled .btn {
 }
 
 .navbar-collapse img {
+  width: auto;
   height: 30px;
   margin: 30px;
 }
@@ -12192,26 +12193,32 @@ h1, .h1 {
 }
 
 /*SECCIÓN GALERÍA*/
-.seccion__galeria--grid img {
-  -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+.row h2, .row .h2 {
+  background-color: rgba(234, 155, 187, 0.4);
+  color: #e273a0;
 }
 
-.seccion__galeria--grid img:hover {
-  -webkit-filter: grayscale(0%);
-          filter: grayscale(0%);
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-}
-
-.seccion__galeria--grid video {
+.seccion__galeria--grid {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
-  height: 100%;
+}
+
+.seccion__galeria--grid img {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-filter: blur(3px) grayscale(100%);
+          filter: blur(3px) grayscale(100%);
+}
+
+.seccion__galeria--grid img:hover {
+  -webkit-filter: blur(0px) grayscale(0%);
+          filter: blur(0px) grayscale(0%);
+}
+
+.seccion__galeria--grid .seccion__galeria--imagen {
+  -webkit-filter: blur(0px) grayscale(0%);
+          filter: blur(0px) grayscale(0%);
 }
 
 /*SECCIÓN CONTACTO*/

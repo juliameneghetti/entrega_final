@@ -65,7 +65,7 @@ $opacidadSecundario: rgba(234, 155, 187, .60);
     justify-content:flex-end;
     
     img{
-        height: 30px;
+        @include tamaño (auto, 30px);
     
         margin: 30px;
     }
@@ -87,6 +87,7 @@ $opacidadSecundario: rgba(234, 155, 187, .60);
 
 .home__video{
     width: 100%;
+
     margin-top: 50px;
 }
 
@@ -101,8 +102,7 @@ $opacidadSecundario: rgba(234, 155, 187, .60);
     
     margin: 100px auto 0 auto;
 
-    width: 350px;
-    height: 120px;
+    @include tamaño (350px, 120px);
 
     a{
         text-decoration: none;
@@ -149,7 +149,6 @@ $opacidadSecundario: rgba(234, 155, 187, .60);
             left: 65%;
             transform: translate(-50%, -50%);
 
-
             text-align: right;
             letter-spacing: 2px;
             word-spacing: 5px;
@@ -159,7 +158,6 @@ $opacidadSecundario: rgba(234, 155, 187, .60);
             color: $colorSecundario;
 
             @include tamaño (400px, 400px);
-
 
             b{
                 color: $colorFuente;
@@ -235,9 +233,9 @@ h1{
 
 .seccion__tienda--background{
     background: {
-    image: url("../multimedia/imagenes/tienda/mancha.png");
-    repeat: no-repeat;
-    position: center;
+        image: url("../multimedia/imagenes/tienda/mancha.png");
+        repeat: no-repeat;
+        position: center;
     }
 }
 
@@ -294,22 +292,29 @@ h1{
 
 /*SECCIÓN GALERÍA*/
 
+.row{
+    h2{
+        background-color: $opacidad;
+        color: $colorFuente;
+    }
+}
+
 .seccion__galeria--grid{
+    display: flex;
+
     img{
-        filter: grayscale(100%);
-        transition: all 0.3s; 
+        transition: all 0.3s;
 
+        filter: blur(3px) grayscale(100%);
+        
         &:hover{
-            filter: grayscale(0%);
-            transition: all 0.3s; 
+            filter: blur(0px) grayscale(0%); 
         }
-    }   
+    }
 
-    video{
-        display: flex;
-       
-        @include tamaño (100%, 100%);
-    }   
+    .seccion__galeria--imagen{
+        filter: blur(0px) grayscale(0%);
+    }
 }
 
 /*SECCIÓN CONTACTO*/
