@@ -1,0 +1,62 @@
+/*SECCIÓN NEW IN*/
+
+h1{
+    font: {
+        family: 'Wire One', sans-serif;
+
+        size: 50px;
+    }
+
+    color: $colorSecundario;
+
+    text-align: center;
+
+    margin: 40px 0;
+}
+
+.seccion__newIn--background{
+    background: {
+        image: url("../multimedia/imagenes/new_in/mancha.png");
+        repeat: no-repeat;
+        position: center;
+        size: contain;
+    }
+}
+
+.carousel-item{
+    img{
+        @include tamaño (auto, 900px);
+
+        margin: 0 auto;
+    }
+
+    .carousel-caption{
+        position: static;
+
+        h5{
+            color: $colorSecundario;
+
+            font-size: 25px;
+        }
+    
+        button{
+            margin-top: 30px;
+            padding: 10px 40px;
+    
+            color: $colorSecundario;
+
+            font-size: 25px;
+         
+            &:hover{
+                background-color: $opacidadSecundario;
+                border-radius: 10px; 
+            }
+        }
+        
+        img{
+            @include tamaño (auto, 40px);
+
+            margin-top: 30px;
+        }
+    }
+}

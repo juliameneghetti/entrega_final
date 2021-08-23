@@ -1,0 +1,27 @@
+/*SECCIÓN GALERÍA*/
+
+.row{
+    h2{
+        background-color: $opacidad;
+        
+        color: $colorFuente;
+    }
+}
+
+.seccion__galeria--grid{
+    display: flex;
+
+    img{
+        transition: all 0.3s;
+
+        filter: blur(3px) grayscale(100%);
+        
+        &:hover{
+            filter: blur(0px) grayscale(0%); 
+        }
+    }
+
+    .seccion__galeria--imagen{
+        filter: blur(0px) grayscale(0%);
+    }
+}
